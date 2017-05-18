@@ -1,12 +1,12 @@
 package first;
 import javax.swing.JOptionPane;
-//Õâ¸öÓ¦ÓÃÊÇ´òÓ¡»¶Ó­ÓÃJava
+//è¿™ä¸ªåº”ç”¨æ˜¯æ‰“å°æ¬¢è¿ç”¨Java
 public class Welcome {
 	public static void main(String[] args )
-	{
-	JOptionPane.showMessageDialog(null,	//Ò»°ãÎªnull
-								"welcome",//ÎÄ±¾ÏÔÊ¾ÄÚÈİ
-								"example",//¶Ô»°¿ò±êÌâ
-								JOptionPane.INFORMATION_MESSAGE);//²ÎÊı
+	{ 
+	JOptionPane.showMessageDialog(null,	//ä¸€èˆ¬ä¸ºnull
+				     "welcome",//æ–‡æœ¬æ˜¾ç¤ºå†…å®¹
+				     "example",//å¯¹è¯æ¡†æ ‡é¢˜
+				     JOptionPane.INFORMATION_MESSAGE);//å‚æ•°
 	}
 }
