@@ -1,0 +1,41 @@
+public class choseSort {
+	public static void main(String[] args)
+	{
+		int flag;
+		int[] myarray;
+		myarray = new int[10];
+		
+		for(int i=0;i<myarray.length;i++)
+		{
+			myarray[i]=myarray.length-i;
+		}
+		System.out.println("排序之前的数据是：");
+		for(int i=0;i<myarray.length;i++)
+		{
+			System.out.print(" "+myarray[i]);
+		}
+		System.out.println(" ");
+		System.out.println("排序之后的数据是：");
+		//这里使用的是选择排序
+		for(int i=0;i<myarray.length;i++)
+		{
+			int max=myarray[0];	//定义最大的值是myarray[0]
+			flag=0;
+			for(int j=0;j<myarray.length-i;j++)
+			{
+				if(max<myarray[j])
+				{
+					max=myarray[j];
+					flag=j;
+				}
+			}
+			int temp = myarray[myarray.length-1-i];
+			myarray[myarray.length-1-i]=max;
+			myarray[flag]=temp;
+		}
+		for(int i=0;i<myarray.length;i++)
+		{
+			System.out.print(" "+myarray[i]);
+		}
+	}
+}
